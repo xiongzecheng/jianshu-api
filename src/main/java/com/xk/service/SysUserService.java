@@ -1,6 +1,6 @@
 package com.xk.service;
 
-import com.xk.entity.LoginUser;
+import com.xk.domain.LoginUser;
 import com.xk.entity.SysUser;
 
 import java.util.List;

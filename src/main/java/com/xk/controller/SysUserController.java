@@ -1,6 +1,6 @@
 package com.xk.controller;
 
-import com.xk.entity.LoginUser;
+import com.xk.domain.LoginUser;
 import com.xk.service.SysUserService;
 import com.xk.utils.ResponseUtil;
 import org.springframework.web.bind.annotation.*;
@@ -18,7 +18,7 @@ public class SysUserController {
     private SysUserService sysUserService;
 
     @RequestMapping(value = "/sign_in", method = RequestMethod.POST)
-    public org.apache.tomcat.util.http.ResponseUtil signIn(@RequestBody LoginUser loginUser) {
+    public ResponseUtil signIn(@RequestBody LoginUser loginUser) {
         System.out.println(loginUser);
         return sysUserService.userLogin(loginUser);
     }

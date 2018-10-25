@@ -1,7 +1,7 @@
 package com.xk.service.impl;
 
 import com.xk.dao.SysUserRepositry;
-import com.xk.entity.LoginUser;
+import com.xk.domain.LoginUser;
 import com.xk.entity.SysUser;
 import com.xk.service.SysUserService;
 import com.xk.utils.ResponseUtil;
